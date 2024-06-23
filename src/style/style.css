@@ -1,0 +1,174 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #228af9;
+    height: 100%;
+}
+
+.loading-screen {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    line-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #43567f;
+    color: #e9f4f6;
+    font-family: 'Outfit';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.input-form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[name='note-title'],
+textarea[name='note-text'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+input[name='submit-button'] {
+    background-color: #77d4e4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* Add focus styles for input fields */
+input[name='note-title']:focus,
+textarea[name='note-text']:focus {
+    outline: none;
+    border-color: #3cbc8d;
+    box-shadow: 0 0 5px rgba(60, 188, 141, 0.5);
+}
+
+#listNote {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    flex: 2;
+    justify-content: center;
+    justify-items: center;
+    align-items: baseline;
+    background-color: #e9f4f6;
+}
+
+.note-item {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #43567f;
+    border-radius: 10px;
+    color: white;
+}
+
+.button-delete {
+    background-color: red;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-delete:hover {
+    background-color: darkred;
+}
+
+.button-archive {
+    background-color: rgb(34, 165, 7);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-archive:hover {
+    background-color: green;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main .new-note {
+    min-width: 200px;
+}
+
+main .note-list .note-item {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #43567f;
+    border-radius: 10px;
+    color: white;
+}
+
+main .new-note .note-form {
+    padding: 15px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #43567f;
+    border-radius: 10px;
+    color: white;
+}
+
+nav h1 {
+    margin: 0px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #6891eb;
+    color: #10d4f7;
+    font-family: 'Outfit';
+    font-size: 0.8em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <title>Notes app</title>
+        <script defer="defer" src="bundle.js"></script>
+    </head>
+    <body>
+        <div id="loading" class="loading-screen">Loading...</div>
+        <nav><title-bar></title-bar></nav>
+        <main>
+            <div class="new-note">
+                <div class="note-form">
+                    <form>
+                        <label class="input-form" for="note-title">Judul</label>
+                        <input
+                            class="input-form"
+                            id="title"
+                            name="note-title"
+                            required
+                        /><br /><label class="input-form" for="note-text"
+                            >Isi</label
+                        >
+                        <textarea
+                            class="input-form"
+                            name="note-text"
+                            id="note-text"
+                            maxlength="120"
+                        ></textarea
+                        ><submit-button id="submit"></submit-button>
+                    </form>
+                </div>
+            </div>
+            <div id="listNote"></div>
+        </main>
+        <footer><footer-custom></footer-custom></footer>
+    </body>
+</html>
